@@ -1,0 +1,113 @@
+<style>
+
+    *{margin:0;padding:0;box-sizing:border-box;}
+
+    body{
+      background:#fff;
+      color:#333;
+    }
+
+    /* HEADER */
+    header{
+      width:100%;
+      padding:15px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid #eee;
+      position:sticky;
+      top:0;
+      background:#fff;
+    }
+    header img{height:60px;}
+
+    .icons{
+      font-size:24px;
+      display:flex;
+      gap:18px;
+    }
+
+    /* HERO */
+    .hero{
+      width:100%;
+      padding:40px 20px;
+      background:#fff7eb;
+      text-align:left;
+    }
+    .hero h1{font-size:32px;margin:10px 0;}
+    .hero p{color:#666;max-width:600px;}
+
+    /* TEAM */
+    .team{
+      padding:40px 20px;
+      width:100%;
+    }
+    .team-title{
+      text-align:center;
+      margin-bottom:25px;
+    }
+    .team-title h2{font-size:28px;margin-top:8px;}
+
+    .cards{
+      width:100%;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:10px;
+      text-align:center;
+      padding:12px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    }
+    .card img{
+      width:100%;
+      border-radius:10px;
+    }
+    .name{font-size:18px;margin-top:10px;font-weight:bold;}
+    .role{font-size:13px;color:#777;margin-bottom:8px;}
+
+    /* CTA */
+    .cta{
+      width:100%;
+      padding:40px 20px;
+      text-align:center;
+      background:#fff3d6;
+    }
+    .cta a{
+      display:inline-block;
+      padding:12px 24px;
+      background:#ff9f1c;
+      color:#fff;
+      border-radius:30px;
+      font-weight:bold;
+      text-transform:uppercase;
+    }
+
+    /* FOOTER */
+    footer{
+      padding:25px 20px;
+      text-align:center;
+      color:#777;
+      border-top:1px solid #eee;
+      font-size:14px;
+    }
+    footer img{height:30px;}
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      .cards{
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+
+    @media(max-width:600px){
+      header img{height:40px;}
+      .cards{
+        grid-template-columns:1fr;
+      }
+    }
+
+  </style>
